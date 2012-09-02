@@ -14,9 +14,6 @@ class SimpleAdministrativeMessages {
     function __construct() {
         add_action( 'admin_print_styles', array( &$this, 'register_admin_styles' ) );
         add_action( 'wp_enqueue_scripts', array( &$this, 'register_plugin_styles' ) );
-
-        register_activation_hook( __FILE__, array( &$this, 'activate' ) );
-        register_deactivation_hook( __FILE__, array( &$this, 'deactivate' ) );
     }
 
     public function register_admin_styles() {
