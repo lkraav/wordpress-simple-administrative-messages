@@ -1,4 +1,5 @@
 .administrative-message { color: #fdf6e3; font-weight: bold; }
+.administrative-message a { background-color: #fdf6e3; color: #268bd2; padding: 0 0.5em; }
 .administrative-message p { line-height: 2em; padding: 0 0.5em; }
 .administrative-message .info { background-color: #859900; }
 .administrative-message .warning { background-color: #b58900; }
