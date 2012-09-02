@@ -29,10 +29,11 @@ class SimpleAdministrativeMessages {
 
 new SimpleAdministrativeMessages();
 
-function admin_message( $message, $level = "info" ) {
+function admin_message( $message, $level = "info", $mincap = "delete_users" ) {
+    if ( ! current_user_can( $mincap ) ) return;
 ?>
-<div class="administrative-message">
-    <p class="<?php echo $level; ?>"><?php echo $message; ?></p>
-</div>
+    <div class="administrative-message">
+        <p class="<?php echo $level; ?>"><?php echo $message; ?></p>
+    </div>
 <?php
 }
