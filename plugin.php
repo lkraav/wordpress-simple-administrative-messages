@@ -17,7 +17,7 @@ class SimpleAdministrativeMessages {
     }
 
     public function register_admin_styles() {
-        wp_register_style( 'simple-administrative-messages-admin-styles', plugins_url( 'simple-administrative-messages/css/admin.css' ) );
+        wp_register_style( 'simple-administrative-messages-admin-styles', plugins_url( 'simple-administrative-messages/css/style.css' ) );
         wp_enqueue_style( 'simple-administrative-messages-admin-styles' );
     }
 
