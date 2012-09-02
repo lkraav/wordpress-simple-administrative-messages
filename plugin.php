@@ -28,3 +28,11 @@ class SimpleAdministrativeMessages {
 }
 
 new SimpleAdministrativeMessages();
+
+function admin_message( $message, $level = "info" ) {
+?>
+<div class="administrative-message">
+    <p class="<?php echo $level; ?>"><?php echo $message; ?></p>
+</div>
+<?php
+}
