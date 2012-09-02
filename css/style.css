@@ -1,1 +1,5 @@
-/* This stylesheet is used to style the public view of the plugin. */
+.administrative-message { color: #fdf6e3; font-weight: bold; }
+.administrative-message p { line-height: 2em; padding: 0 0.5em; }
+.administrative-message .info { background-color: #859900; }
+.administrative-message .warning { background-color: #b58900; }
+.administrative-message .error { background-color: #dc322f; }
