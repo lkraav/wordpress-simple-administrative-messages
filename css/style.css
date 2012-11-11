@@ -1,5 +1,5 @@
 .administrative-message { color: #fdf6e3; font-weight: bold; }
-.administrative-message a { background-color: #fdf6e3; color: #268bd2; padding: 0 0.5em; }
+.administrative-message a { background-color: #fdf6e3; color: #268bd2; margin: 0 0.5em; padding: 0 0.5em; }
 .administrative-message p { background-position: .5em center; background-repeat: no-repeat; border-radius: .5em; line-height: 2em; padding: 0 .5em 0 2.5em; }
 .administrative-message .info { background-image: url('../img/light-bulb.png'); background-color: #859900; }
 .administrative-message .warning { background-image: url('../img/exclamation.png'); background-color: #b58900; }
