@@ -3,7 +3,7 @@
 Plugin Name: Simple Administrative Messages
 Plugin URI: http://markitekt.ee/wordpress/simple-administrative-messages
 Description: Lets you display helpful messages to your (usually) administrative users (usually) about why various stuff in your system works the way it does
-Version: 0.1
+Version: 0.2
 Author: Leho Kraav
 Author URI: http://leho.kraav.com
 Author Email: leho@kraav.com
