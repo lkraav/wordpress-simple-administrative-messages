@@ -29,11 +29,18 @@ class SimpleAdministrativeMessages {
 
 new SimpleAdministrativeMessages();
 
-function admin_message( $message, $level = "info", $mincap = "delete_users" ) {
+function admin_message( $message, $level = "info", $mincap = "delete_users", $return = false ) {
     if ( ! current_user_can( $mincap ) ) return;
+
+    if ( $return ) ob_start();
 ?>
     <div class="administrative-message">
         <p class="<?php echo $level; ?>"><?php echo $message; ?></p>
     </div>
 <?php
+    if ( $return ) return ob_get_clean();
+}
+
+function get_admin_message( $message, $level = "info", $mincap = "delete_users" ) {
+    return admin_message( $message, $level, $mincap, true );
 }
